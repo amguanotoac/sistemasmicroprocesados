@@ -77,7 +77,7 @@ void loop() {
   if(digitalRead(bot1)==HIGH){
     delay(300); // dELaY aNTI-REbOTES, software -> 200-500 ms, hardware -. 15-30 ms
     on1=1-on1;
-    if (cont1<25)
+    if (cont1<26)
       cont1++;
     else
       cont1=0;
@@ -97,7 +97,7 @@ void loop() {
   if(digitalRead(bot2)==HIGH){
     delay(300); // dELaY aNTI-REbOTES, software -> 200-500 ms, hardware -. 15-30 ms
     (on2)=1-(on2);
-    if ((cont2)<25)
+    if ((cont2)<26)
       (cont2)++;
     else
       (cont2)=0;
