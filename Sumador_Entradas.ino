@@ -7,16 +7,8 @@ int bot1=34;
 int bot2=35;
 int bot3=36;
 
-int on1=0;
 int cont1=0;
-
-
-int on2=0;
 int cont2=0;
-
-int on3=0;
-int cont3=0;
-
 int suma=0;
 
 // PINES DE DISPLAYS
@@ -41,10 +33,8 @@ int decenas3, unidades3;
 
 int dec1=30;
 int uni1=31;
-
 int dec2=32;
 int uni2=33;
-
 int dec3=42;
 int uni3=43;
 
@@ -76,8 +66,7 @@ void loop() {
   // FUNCIONAMIENTO DEL BOTON b1
   if(digitalRead(bot1)==HIGH){
     delay(300); // dELaY aNTI-REbOTES, software -> 200-500 ms, hardware -. 15-30 ms
-    on1=1-on1;
-    if (cont1<26)
+    if (cont1<25)
       cont1++;
     else
       cont1=0;
@@ -96,8 +85,7 @@ void loop() {
    // FUNCIONAMIENTO DEL BOTON b2
   if(digitalRead(bot2)==HIGH){
     delay(300); // dELaY aNTI-REbOTES, software -> 200-500 ms, hardware -. 15-30 ms
-    (on2)=1-(on2);
-    if ((cont2)<26)
+    if ((cont2)<25)
       (cont2)++;
     else
       (cont2)=0;
@@ -116,7 +104,6 @@ void loop() {
     // FUNCIONAMIENTO DEL BOTON b3
   if(digitalRead(bot3)==HIGH){
     delay(300); // DELAY ANTIREBOTES, software -> 200-500 ms, hardware -. 15-30 ms
-    (on3)=1-(on3);
     suma=cont1+cont2;
     decenas3=(suma)/10;
     unidades3=(suma)-(decenas3)*10;
